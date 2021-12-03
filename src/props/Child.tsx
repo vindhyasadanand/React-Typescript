@@ -1,8 +1,19 @@
+interface ChildProps {
+    color: string
+}
 
-const Child = () => {
+const Child = ({color}: ChildProps) => {
   
-    return <div>Hi there!</div>
+    return <div>{color}</div>
 
 }
 
+const ChildAsFC: React.FC<ChildProps> = ({ color }) => {
+    return <div>{color}</div>
+}
+
+/*const ChildAsFC: React.FunctionComponent<ChildProps> = ({color}) => {
+    return <iv>{color}</iv>
+}
+*/
 export default Child;
