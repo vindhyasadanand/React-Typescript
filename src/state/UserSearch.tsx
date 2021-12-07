@@ -15,6 +15,7 @@ const UserSearch: React.FC = () => {
           return user.name == name;
       });
       setUser(foundUser)
+      console.log("am clicked")
   }
   return <div>User Search:
   <input value={name} onChange={(e) => setName(e.target.value)}/>
